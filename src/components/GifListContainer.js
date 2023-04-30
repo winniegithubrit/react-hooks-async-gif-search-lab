@@ -6,7 +6,7 @@ function GifListContainer(){
   const[search,setSearch]=useState("dolphins")
   //const apiKey='dc6zaTOxFJmzC'
   useEffect(()=>{
-    fetch(`https://api.giphy.com/v1/gifs/search?q=${search === ""? "dolphin":search}&api_key=saanLrcouTbMFfTg26rXD2MrLPGObE7A&rating=g }`)
+    fetch(`https://api.giphy.com/v1/gifs/search?q=${search === ""? "dolphin":search}&api_key=sD9W96hjaWABDI17I9T9wBx1rAlBFxjF&rating=g }`)
     .then((response)=>response.json())
     .then(({data})=>{
       const gifs=data.slice(0,3).map((gif)=>({url:gif.images.original.url}))
